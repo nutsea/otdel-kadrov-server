@@ -1,0 +1,23 @@
+const Router = require('express')
+const router = new Router()
+const userRouter = require('./userRouter')
+const databasesRouter = require('./databasesRouter')
+const securityRouter = require('./securityRouter')
+const networkingRouter = require('./networkingRouter')
+const projectManagementRouter = require('./projectManagementRouter')
+const webTechRouter = require('./webTechRouter')
+const programmingRouter = require('./programmingRouter')
+const itBasicsRouter = require('./itBasicsRouter')
+const testRouter = require('./testRouter')
+
+router.use('/user', userRouter)
+router.use('/databases', databasesRouter)
+router.use('/security', securityRouter)
+router.use('/networking', networkingRouter)
+router.use('/projectmanagement', projectManagementRouter)
+router.use('/webtech', webTechRouter)
+router.use('/programming', programmingRouter)
+router.use('/itbasics', itBasicsRouter)
+router.use('/test', testRouter)
+
+module.exports = router
